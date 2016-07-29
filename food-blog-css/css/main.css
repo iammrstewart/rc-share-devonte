@@ -1,0 +1,73 @@
+h1 a {
+  color: red;
+  font-family: 'lato';
+  text-decoration: none;
+  font-weight: lighter;
+}
+
+h2 a {
+  color: black;
+  font-family: 'lato';
+  text-decoration: none;
+}
+
+h2 {
+  color: black;
+  font-family: 'lato';
+  font-weight: lighter;
+}
+
+a {
+  color: gray;
+  font-family: 'lato';
+}
+
+h3 {
+  color: gray;
+  font-family: 'lato';
+  font-weight: lighter;
+}
+
+h4 a {
+  color: red;
+  font-family: 'lato';
+  float: right;
+  text-decoration: none;
+}
+
+p {
+  color: gray;
+  font-family: 'lato';
+  display: block;
+  margin: auto;
+}
+
+footer a {
+  color: red;
+  font-family: 'lato';
+  text-decoration: none;
+}
+
+ #newyork_img {
+  height: 130px;
+  width: 650px;
+  display: block;
+  margin: auto;
+}
+
+#paris_img {
+  height: 300px;
+  width: 650px;
+  display: block;
+  margin: auto;
+}
+
+article p::first-letter {
+  float: left;
+  font-size: 75px;
+  line-height: 60px;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
+  color: #D3D3D3
+}

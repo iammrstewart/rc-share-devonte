@@ -1,0 +1,58 @@
+h1 {
+   text-align: center;
+   color: red;
+  }
+
+address {
+   text-align: center;
+   color: purple;
+}
+
+address a {
+  color: red;
+}
+
+h2 {
+  color: red;
+}
+
+h3 {
+  color: purple;
+}
+
+h1:first-letter {
+  color: #903;
+  font-size: 75px;
+  line-height: 60px;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
+  font-family: georgia;
+}
+
+h2:first-letter {
+  float: left;
+  color: #903;
+  font-size: 75px;
+  line-height: 60px;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
+  font-family: Georgia;
+}
+
+p {
+  color: grey
+ }
+
+li {
+  color: navy
+}
+
+#mation {
+  color: navy
+}
+
+#info {
+  color: navy
+}
