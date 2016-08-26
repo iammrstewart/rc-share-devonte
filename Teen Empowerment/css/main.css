@@ -513,19 +513,23 @@ border: 0;
   .mobile2 {
       width: 100px;
       position: absolute;
-      top: 56px;
+      top: 40px;
       right: 18px;
+      line-height: 35px;
     }
     #hover{
       flex-direction: column;
       align-items: flex-start;
       width: 100%;
+
      }
+
 section {
   float: left;
 }
 div{
   float: left;
+  width: 100%;
 }
 
 #facebookad{
@@ -533,8 +537,47 @@ div{
   margin-left: 50px;
 }
 
-#about, p, span {
-  margin-top: 140px;
+#about{
+  margin-top:100px;
+  margin-left: 50px;
+ }
+ #learn{
+   margin-top:90px;
+   margin-left: 50px;
+  }
+p{
   margin-left: 50px;
 }
-  }
+ footer{
+   float: left;
+   margin-top: 70px;
+   height: 200px;
+ }
+#overlay5{
+  margin-top: 100px;
+}
+#overlay6{
+  margin-top: 150px;
+  line-height: 18px;
+}
+
+ #overlay7{
+   margin-top: 100px;
+   margin-left: 160px;
+ }
+ #overlay8{
+   margin-top: 95px;
+   margin-left: 200px;
+ }
+ #overlay9{
+   margin-top: 110px;
+   margin-left: 270px;
+ }
+ #aboutimg{
+   margin-left: 50px;
+ }
+ #featured{
+   margin-left: 50px;
+   margin-top: 70%;
+ }
+}
