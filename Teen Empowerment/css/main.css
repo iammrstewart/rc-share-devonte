@@ -68,23 +68,99 @@ font-family: 'Roboto', sans-serif;
   margin: auto;
 }
 
-#overlay2 {
-    color: white;
-    position: absolute;
-    z-index:100;
-    font-family: 'Oswald', sans-serif;
-    font-size: 15px;
-    line-height: 20px;
-    width: 15%;
-    display: inline-block;
-    padding: 0% 0% 0% 5%;
-    vertical-align: top;
-    margin-bottom: 50%;
-    transition: all .7s;
-    margin-left: -2%;
-    margin-top: 2%;
+#hover {
+  display: flex;
+
+  align-items: center;
 }
 
+.featured {
+  margin: 10px;
+  position: relative;
+  overflow: hidden;
+  width: 300px;
+  height: 300px;
+}
+.featured-image {
+    display: block;
+    min-width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+.featured-image2 {
+    display: block;
+    min-width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+.featured-image3 {
+    display: block;
+    min-width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+.featured__overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 40px;
+    color: white;
+    transform: translateY(100%);
+    transition: transform .35s ease-out;
+}
+.featured:hover .featured__overlay {
+    transform: translateY(0);
+}
+
+.featured__overlay__title {
+    margin-bottom: 50px;
+    margin-top: 50px;
+    margin-left: 70px;
+    padding: 0 0;
+    transform: translateY( calc(-100% - 10px) ); /* +10px overlay padding */
+    transition: transform .35s ease-out;
+    font-family: 'Oswald', sans-serif;
+}
+.featured:hover .featured__overlay__title {
+    transform: translateY(0);
+}
+
+.featured::before {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: transparent;
+    transition: background .35s ease-out;
+}
+.featured:hover::before {
+    background: rgba(0, 0, 0, .5);
+}
+.featured__overlay__content {
+    width: 80%;
+    margin-left: 50px;
+    margin-top: 0px;
+}
+#summerville {
+  margin-left: 70px;
+  margin-top: -30px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-family: 'Oswald', sans-serif;
+}
 #overlay3 {
     color: white;
     position: absolute;
@@ -114,6 +190,7 @@ font-family: 'Roboto', sans-serif;
     transition: all .7s;
     margin-left: -4%;
     margin-top: 1%;
+
 }
 
 p {
@@ -283,7 +360,7 @@ a {
 }
 
 footer{
-  height: 150px;
+  height: 165px;
   width: 900px;
   background-color: black;
   margin-top: 6%;
@@ -368,3 +445,96 @@ footer{
     height: 30px;
     width: 30px;
 }
+
+.hidden {
+  display: none;
+}
+
+.mobile {
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+  .mobile button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    border: 0;
+    text-indent: 200%;
+    overflow: hidden;
+    background: rgba(255,255,255,1) url("http://i.imgur.com/vKRaKDX.png") center no-repeat;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    background-size: 80%;
+    width: 30px;
+    height: 30px;
+    outline: none;
+    -webkit-transition: all 400ms ease;
+    transition: all 400ms ease;
+  }
+  .mobile button .expanded {
+-webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+background-color: transparent;
+border: 0;
+}
+
+
+#a{
+  text-align: center;
+  padding: 20px 0;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+  a:hover, a:active, a:focus{
+    background: darken(#eee, 3%);
+  }
+
+.desktop{
+  display: block;
+  overflow: hidden;
+}
+.desktop a{
+    width: 25%;
+
+  }
+    .desktop a:last-child{
+      border-right: none;
+    }
+
+
+
+@media only screen and (max-width: 800px){
+  #overlay4 {
+    display: none;
+   }
+  .mobile2 {
+      width: 100px;
+      position: absolute;
+      top: 56px;
+      right: 18px;
+    }
+    #hover{
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+     }
+section {
+  float: left;
+}
+div{
+  float: left;
+}
+
+#facebookad{
+  margin-top: 140px;
+  margin-left: 50px;
+}
+
+#about, p, span {
+  margin-top: 140px;
+  margin-left: 50px;
+}
+  }
